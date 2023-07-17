@@ -15,18 +15,9 @@ function DrumPad(props) {
     }
   }
 
-  function key() {
-    console.log("hi");
-  }
-
   return (
     <>
-      <div
-        className="drum-pad"
-        id={props.name}
-        onClick={handlePlay}
-        onKeyDown={key}
-      >
+      <div className="drum-pad" id={props.name} onClick={handlePlay}>
         {props.id}
         <audio
           className="clip"
